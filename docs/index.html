@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide | InfyPOS</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description"
+          content="InfyJobs comes with 3 different login panel each for Admin, Job Seeker and Employer with a different set of features and controls.">
+
+    <link rel="preload" href="../assets/css/0.styles.d622f06c.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/10.js" as="script">
+    <link rel="prefetch" href="../js/11.js">
+    <link rel="prefetch" href="../js/12.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.d622f06c.css">
+</head>
+<body>
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="../index.html" class="home-link router-link-active"><img src="../images/logo.png"
+                                                                              alt="InfyPOS"
+                                                                              class="logo"> <span
+                    class="site-name can-hide">InfyPOS</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">
+                        Home
+                    </a></div>
+                    <div class="nav-item"><a href="../docs/index.html" aria-current="page"
+                                             class="nav-link router-link-exact-active router-link-active">
+                        Docs
+                    </a></div>
+                    <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                        Releases
+                    </a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                        Upgrade Guide
+                    </a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="../index.html" class="nav-link">
+                    Home
+                </a></div>
+                <div class="nav-item"><a href="../docs/index.html" aria-current="page"
+                                         class="nav-link router-link-exact-active router-link-active">
+                    Docs
+                </a></div>
+                <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                    Releases
+                </a></div>
+                <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                    Upgrade Guide
+                </a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!---->
+                    </p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            <li><a href="#technologies-used" class="sidebar-link">Technologies Used</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#installation-guide" class="sidebar-link">Installation Guide</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#system-requirement"
+                                                                      class="sidebar-link">System Requirement</a></li>
+                                    <li class="sidebar-sub-header"><a href="#setup-InfyPOS-system"
+                                                                      class="sidebar-link">Setup InfyPOS System</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_1-copy-files-to-web-server"
+                                                                      class="sidebar-link">1. Copy files to web
+                                        server</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-setup-default-db"
+                                                                      class="sidebar-link">2. Setup Default DB</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_3-setup-environment-env-file"
+                                                                      class="sidebar-link">3. Setup environment .env
+                                        file</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_4-admin-login" class="sidebar-link">4.
+                                        Admin login</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#setup-InfyPOS-into-local-environment" class="sidebar-link">Setup InfyPOS
+                                into Local Environment</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_1-install-xampp-wamp-if-you-don-t-have-it"
+                                            class="sidebar-link">1. Install xampp/wamp (if you don't have it).</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-create-folder-InfyPOS"
+                                                                      class="sidebar-link">2. Create folder InfyPOS</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_3-unzip-dist-src-zip-to-InfyPOS-folder" class="sidebar-link">3.
+                                        Unzip dist/src zip to InfyPOS folder</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_4-point-the-domain-to-the-uploaded-folder"
+                                            class="sidebar-link">4. Point the domain to the uploaded folder</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#key-features-and-concepts" class="sidebar-link">Key Features and
+                                Concepts</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#users-management" class="sidebar-link">Users Management</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#dashboard" class="sidebar-link">Dashboard</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#customers" class="sidebar-link">Customers</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#warehouse" class="sidebar-link">Warehouse</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#products" class="sidebar-link">Products</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#print-barcode" class="sidebar-link">Print Barcode</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#brands" class="sidebar-link">Brands</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#product-categories" class="sidebar-link">Product Categories</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#expense-categories" class="sidebar-link">Expense Categories</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#expenses" class="sidebar-link">Expenses</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#units" class="sidebar-link">Units</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#currencies" class="sidebar-link">Currencies</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#purchases" class="sidebar-link">Purchases</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#purchase-return" class="sidebar-link">Purchase Return</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#sales" class="sidebar-link">Sales</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#sale-return" class="sidebar-link">Sale Return</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#reports" class="sidebar-link">Reports</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#settings" class="sidebar-link">Settings</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide"
+                                                                                  class="header-anchor">#</a> Guide</h1>
+                <p>The goal of POS is to give an easy way to Inventory and Stock Management.</p>
+                <h2 id="technologies-used"><a href="#technologies-used" class="header-anchor">#</a> Technologies Used
+                </h2>
+                <p>This system uses multiple technologies to give the best possible experience.</p>
+                <ul>
+                    <li>PHP with Laravel Framework</li>
+                    <li>MySQL 5.6+</li>
+                    <li>PHP 7.4+</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                </ul>
+                <h2 id="installation-guide"><a href="#installation-guide" class="header-anchor">#</a> Installation Guide
+                </h2>
+                <p>We tried our best to make the installation of the system as easy as possible.
+                    System Requirements
+                    It is assumed that you have primary knowledge Laravel installation knowledge since this application
+                    is built on Laravel.</p>
+                <h3 id="system-requirement"><a href="#system-requirement" class="header-anchor">#</a> System Requirement
+                </h3>
+                <p>It is assumed that you have primary knowledge Laravel and JS application installation knowledge since
+                    this application is built on Laravel with JS.</p>
+                <p>You can read about laravel Requirements <a href="https://laravel.com/docs/8.x#server-requirements"
+                                                              target="_blank" rel="noopener noreferrer">here<span><svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor"
+                                                                                                 d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>You need update below variables in php.ini file if you want to send bigger files (Optional).</p>
+                <p>upload_max_filesize = 50M</p>
+                <p>max_file_uploads = 50</p>
+                <p>post_max_size = 100M</p>
+                <h3 id="setup-InfyPOS-system"><a href="#setup-InfyPOS-system" class="header-anchor">#</a> Setup InfyPOS
+                    System</h3>
+                <p>If you have purchased the InfyPOS system then you will be able to find the zip named
+                    <code>dist.zip</code></p>
+                <p>If you want to setup <code>InfyPOS</code> into your local environment then you can take help from
+                    here <a href="#setup-InfyPOS-into-local-environment">here</a>.</p>
+                <p>Now if you want to setup InfyPOS on your server then you can directly copy the <code>dist.zip</code>
+                    folder to your web root directory on server and the following steps:</p>
+                <h3 id="_1-copy-files-to-web-server"><a href="#_1-copy-files-to-web-server" class="header-anchor">#</a>
+                    1. Copy files to web server</h3>
+                <p>Upload <code>dist.zip</code> to your web server's root (public_html) and extract it there.</p>
+                <h3 id="_2-setup-default-db"><a href="#_2-setup-default-db" class="header-anchor">#</a> 2. Setup Default
+                    DB</h3>
+                <ol>
+                    <li>Open PHPMyAdmin on your server and do a login.</li>
+                </ol>
+                <p><img src="../images/docs-images/db1.png" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Click on the Databases tab.</li>
+                </ol>
+                <p><img src="../images/docs-images/db2.png" alt="Setup Default DB"></p>
+                <ol start="3">
+                    <li>Create a new database and specify a Database name of your choice and Click Create button.</li>
+                </ol>
+                <p><img src="../images/docs-images/db3.png" alt="Setup Default DB"></p>
+                <ol start="4">
+                    <li>Now on the left, select the database (pos) OR the one that you have created.</li>
+                    <li>Click Import in the top menu</li>
+                </ol>
+                <ol start="6">
+                    <li>Under Import, choose the default sql file from <code>dist/database/pos.sql</code> and click
+                        button Go.
+                    </li>
+                </ol>
+                <h3 id="_3-setup-environment-env-file"><a href="#_3-setup-environment-env-file"
+                                                          class="header-anchor">#</a> 3. Setup environment .env file
+                </h3>
+                <ol>
+                    <li>Open .env file from your server's root folder.</li>
+                </ol>
+                <p><img src="../images/docs-images/setup.png" alt="Setup Default DB"></p>
+                <p>You need to change the following information into your environment (.env) file.</p>
+                <div class="language- extra-class"><pre><code>- APP_NAME - Name of your Application/Library System
+- APP_URL - Change this URL with your server URL (including trailing path if you are putting it in sub folder or root website)
+- DB_HOST - Put your database hostname here
+- DB_PORT - Put your database port here if it does not default to 3306
+- DB_DATABASE - Change it to your database name
+- DB_USERNAME - Name of your database user
+- DB_PASSWORD - Password of your database user
+</code></pre>
+                </div>
+                <p>You will also need to set up mail configuration, you can read more about here for that setup based on
+                    mail service that you use.</p>
+                <div class="language- extra-class"><pre><code>- MAIL_MAILER
+- MAIL_HOST
+- MAIL_PORT
+- MAIL_USERNAME
+- MAIL_PASSWORD
+- MAIL_ENCRYPTION
+- MAIL_FROM_ADDRESS 
+- MAIL_FROM_NAME
+</code></pre>
+                </div>
+                <p>If you want to store your files to direct your <code>s3</code> bucket then you have to use following
+                    <code>.env</code> variables.
+                    You need to change <code>FILESYSTEM_DRIVER</code> and <code>MEDIA_DISK</code> value to
+                    <code>s3</code> when you are using AWS file storage.</p>
+                <div class="language- extra-class"><pre><code>- AWS_ACCESS_KEY_ID=
+- AWS_SECRET_ACCESS_KEY=
+- AWS_DEFAULT_REGION=us-east-1
+- AWS_BUCKET=
+- AWS_ENDPOINT=
+- AWS_URL=
+</code></pre>
+                </div>
+                <p>Or you can use your choice of storage driver to store your media assets if you want. All of your
+                    attachments will be placed into that.</p>
+                <p>And you should be ready to go.</p>
+                <h3 id="_4-admin-login"><a href="#_4-admin-login" class="header-anchor">#</a> 4. Admin login</h3>
+                <p>You can login as admin using below credentials.</p>
+                <p>Admin Credentials:
+                    Email / Password : <code>admin@infy-pos.com / 123456</code></p>
+                <h2 id="setup-InfyPOS-into-local-environment"><a href="#setup-InfyPOS-into-local-environment"
+                                                                 class="header-anchor">#</a> Setup InfyPOS into Local
+                    Environment</h2>
+                <p>You can setup InfyPOS into your local by using both zip files, but we recommend to use dist file so
+                    you have to perform minimal steps.</p>
+                <p>Here are some steps to setup InfyPOS into your local environment :</p>
+                <h3 id="_1-install-xampp-wamp-if-you-don-t-have-it"><a
+                        href="#_1-install-xampp-wamp-if-you-don-t-have-it" class="header-anchor">#</a> 1. Install
+                    xampp/wamp (if you don't have it).</h3>
+                <h3 id="_2-create-folder-InfyPOS"><a href="#_2-create-folder-InfyPOS" class="header-anchor">#</a> 2.
+                    Create folder <code>InfyPOS</code></h3>
+                <ul>
+                    <li>if you are using wamp then create InfyPOS folder under you_path_to_wamp/www/</li>
+                    <li>if you are using xamp then create InfyPOS folder under you_path_to_xamp/htdocs/</li>
+                </ul>
+                <h3 id="_3-unzip-dist-src-zip-to-InfyPOS-folder"><a href="#_3-unzip-dist-src-zip-to-InfyPOS-folder"
+                                                                    class="header-anchor">#</a> 3. Unzip dist/src zip to
+                    InfyPOS folder</h3>
+                <h3 id="_4-point-the-domain-to-the-uploaded-folder"><a
+                        href="#_4-point-the-domain-to-the-uploaded-folder" class="header-anchor">#</a> 4. Point the
+                    domain to the uploaded folder</h3>
+                <p>You need to create virtual host first to setup InfyPOS. You can find steps here to create virtual
+                    host.</p>
+                <ul>
+                    <li>You can find steps <a
+                            href="https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567"
+                            target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     aria-hidden="true"
+                                                                                     focusable="false" x="0px" y="0px"
+                                                                                     viewBox="0 0 100 100" width="15"
+                                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>XAMPP</code>.
+                    </li>
+                    <li>You can find steps <a
+                            href="http://codedecode.co.in/blog/wordpress/set-up-virtual-host-with-wamp/" target="_blank"
+                            rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                     aria-hidden="true" focusable="false" x="0px"
+                                                                     y="0px" viewBox="0 0 100 100" width="15"
+                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>WAMP</code>.
+                    </li>
+                </ul>
+                <p>Point your domain or subdomain to the InfyPOS folder.</p>
+                <p>Please note that, InfyPOS must be installed on a primary domain or subdomain. Installing on a
+                    sub-folder will not work, for example:</p>
+                <div class="language- extra-class"><pre><code>    example.com/InfyPOS (Invalid)
+    localhost/InfyPOS (Invalid) if you are putting it in sub folder or root website)
+    example.com (Valid)
+    local.InfyPOS.com (Valid)
+    InfyPOS.test (Valid)
+</code></pre>
+                </div>
+                <p>Open the link to the domain in the browser (Example: https://local.InfyPOS.com).</p>
+                <h2 id="key-features-and-concepts"><a href="#key-features-and-concepts" class="header-anchor">#</a> Key
+                    Features and Concepts</h2>
+                <p>Here are some Key Features and Concepts that InfyPOS provides.</p>
+                <h2 id="users-management"><a href="#users-management" class="header-anchor">#</a> Users Management</h2>
+                <p>It has the users' management, where you can create separate super admin users. that users will be
+                    able to access the POS system with same rights as super admin as we are creating them as super admin
+                    users.</p>
+                <h2 id="dashboard"><a href="#dashboard" class="header-anchor">#</a> Dashboard</h2>
+                <p>It has very beautiful dashboard view. which comes up with very informative data.</p>
+                <p>You can track sales / purchases and returns count from here. There is different kind of graph view
+                    are available too. its showing following charts and data.</p>
+                <ul>
+                    <li>This week Sales &amp; Purchase</li>
+                    <li>Top Selling Products - Year Wise</li>
+                    <li>Top Selling Products of current month</li>
+                    <li>Top 5 Customers</li>
+                    <li>Recent sales listing</li>
+                    <li>Stock Alert</li>
+                </ul>
+                <h2 id="customers"><a href="#customers" class="header-anchor">#</a> Customers</h2>
+                <p>You can manage the customers by using this menu. you can create new customers and delete them or
+                    update the existing customers too.</p>
+                <p>Customers will be used into POS screen, where we can select them to which items they are
+                    purchasing.</p>
+                <h2 id="warehouse"><a href="#warehouse" class="header-anchor">#</a> Warehouse</h2>
+                <p>Warehouse will be used to manage the stocks of products.</p>
+                <p>Same product may available in different warehouse, so of course one product will have 10 stock in
+                    warehouse A, and 5 stock in warehouse B.</p>
+                <p>So in POS screen when you choose the warehouse it will return related available quantities.</p>
+                <h2 id="products"><a href="#products" class="header-anchor">#</a> Products</h2>
+                <p>You can manage your lists of products from this menu, you can create / edit or delete existing
+                    products via this interface.</p>
+                <p>While creating products you can specify the product price, its unit &amp; the stock alerts that will
+                    help you to re-fill the products' quantity when stock is not available. you can also choose the
+                    barcode symbology to generate the barcode which you can later scan it into POS screen.</p>
+                <h2 id="print-barcode"><a href="#print-barcode" class="header-anchor">#</a> Print Barcode</h2>
+                <p>Sometimes its needed to have barcode on papers to scan it. that time you can use this feature.</p>
+                <p>By using this feature you can print same barcode with multiple times on paper. you have to select the
+                    warehouse then you have to choose the product and the number of quantities that you want to print on
+                    paper.</p>
+                <p>You can also preview the print and choose different types of paper sizes here.</p>
+                <h2 id="brands"><a href="#brands" class="header-anchor">#</a> Brands</h2>
+                <p>Brand will be used while creation of products, you can manage the lists of brands via this
+                    section.</p>
+                <p>You can also upload the brand logo.</p>
+                <h2 id="product-categories"><a href="#product-categories" class="header-anchor">#</a> Product Categories
+                </h2>
+                <p>Product categories will be used while creation of product, you can create different kind of
+                    categories here and later it will be used when we create / update new product.</p>
+                <h2 id="expense-categories"><a href="#expense-categories" class="header-anchor">#</a> Expense Categories
+                </h2>
+                <p>Expense categories will be used while we create new expense. you can create or update new categories
+                    from here.</p>
+                <h2 id="expenses"><a href="#expenses" class="header-anchor">#</a> Expenses</h2>
+                <p>To track your companies lists of expenses this menu will be most usefull. later you can prepare
+                    reports from this data.</p>
+                <p>You have to add the title of expense, and the warehouse and the expense category to create new
+                    expense, and yes expense date as well.</p>
+                <h2 id="units"><a href="#units" class="header-anchor">#</a> Units</h2>
+                <p>You can create different kind of units that will be used by products.</p>
+                <p>Units will be used to identify the product, either it will be in kg, or either it will be in pcs. you
+                    can define the name of the units and its short name too.</p>
+                <h2 id="currencies"><a href="#currencies" class="header-anchor">#</a> Currencies</h2>
+                <p>As we are supporting multiple currencies, this menu will be used for many customers that is not from
+                    india.</p>
+                <p>They can just add their own currency and choose it from the globals setting, so they can see their
+                    selected currency everywhere.</p>
+                <h2 id="purchases"><a href="#purchases" class="header-anchor">#</a> Purchases</h2>
+                <p>Purchases will be used to increase the available stock.</p>
+                <p>ks quantity. let's say warehouse A have product's quantity 5, and now we want to add 50 new quantity,
+                    you can use this functionality for that.</p>
+                <p>You have to select the same warehouse and the product in which you want to increase the quantity or
+                    we can say you want to purchase more quantities, do it and hit save.</p>
+                <p>You will now see the updated quantities.</p>
+                <h2 id="purchase-return"><a href="#purchase-return" class="header-anchor">#</a> Purchase Return</h2>
+                <p>In some case we may have to return the purchased products, so we can use this options to track the
+                    purchase returns.</p>
+                <p>Based on this later we are generating reports and displaying data into dashboard.</p>
+                <h2 id="sales"><a href="#sales" class="header-anchor">#</a> Sales</h2>
+                <p>Sales is kind of same as return, when we sale any product it will decrease the available
+                    quantity.</p>
+                <p>So let's say we have Product - A with quantity 50, and we are selling it with quantities 25, later we
+                    will have available quantities 25.</p>
+                <h2 id="sale-return"><a href="#sale-return" class="header-anchor">#</a> Sale Return</h2>
+                <p>its same as purchase return, when any sale will be returned it will affect the available
+                    quantities.</p>
+                <p>Number of returning product sales quantities will be increased into available quantities.</p>
+                <h2 id="reports"><a href="#reports" class="header-anchor">#</a> Reports</h2>
+                <p>Based of the stored data we are generating different kind of reports, which help you to determine the
+                    current state of your POS.</p>
+                <p>We have following reports available right now.</p>
+                <ul>
+                    <li>Warehouse reports</li>
+                    <li>Sales reports</li>
+                    <li>Purchase Reports</li>
+                    <li>Stock Reports</li>
+                    <li>Top Selling products Reports</li>
+                </ul>
+                <h2 id="settings"><a href="#settings" class="header-anchor">#</a> Settings</h2>
+                <p>By using this feature you can change the basic application settings. like change the Application
+                    name, address, logo and the favicon.</p>
+                <p>You can set email settings there and also use the clear cache option too.</p></div>
+            <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/10.js" defer></script>
+</body>
+</html>
